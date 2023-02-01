@@ -1,0 +1,77 @@
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+}
+.box-invisible {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    height: 500px;
+    width: 500px;
+}
+
+.head {
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.point {
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.box-invisible2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    height: 500px;
+    width: 500px;
+}
+
+.tail{
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.lose {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 250px;
+    height: 200px;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: 57.5px;
+    border: 5px solid rgb(100, 100, 100, 0.6);
+    background: rgba(80,80,80,0.6);
+}
+
+.lose-text{
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    margin: 70px 0;
+}
+
+button{
+    font-size: 40px;
+    width: 200px;
+    height: 50px;
+    margin-left: 35%;
+}
+
+.score{
+    position: absolute;
+    font-size: 60px;
+    left: 50px;
+}
