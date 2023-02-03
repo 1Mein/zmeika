@@ -10,33 +10,33 @@
 </head>
 
 <body>
-    <div class="title"><b>Zmeika</b></div>
-
-    <div class="lose">
-        <div class="lose-text">Lose</div>
+    <h1>Zmeika</h1>
+    <div class="win">
+        <div class="win-text">Lose</div>
     </div>
-
-    <div class="score">0</div>
-
-    <div class="box-invisible">
-        <div class="head">O</div>
+    <div class="forrow">
+        <div class="score">0</div>
+        <canvas class="mainbox" width="600" height="600"></canvas>
+        <canvas class="snake" width="600" height="600"></canvas>
+        <div class="equalaizer">Press "Start" to<br>start the game<br><br>"Restart" to play<br>again<br><br>W,A,S,D<br>control
+        <br><br>Record: &nbsp; <adsa class="record">0</adsa>
+        <br><br>
+        Input here interval
+        <input type="text" class="timer">
+        <button class="btn3">Apply</button>
+        Write number pls <br><br>
+        Current interval is: &nbsp; <adsa class="interval"></adsa>
     </div>
-
-    <div class="box-invisible2">
     </div>
-
-    <div class="box">
-        <div class="point">*</div>
+    <div class="btns">
+        <div class="btn">
+            <button class="btn1">Start</button>
+        </div>
+        <div class="btn">
+            <button class="btn2">Restart</button>
+        </div>
     </div>
-    <br>
-
-    <div class="btn">
-        <button onclick="again()">Return</button>
-    </div>
-
-    <div class="index"></div>
-
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>

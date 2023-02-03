@@ -1,77 +1,98 @@
-.title {
+h1 {
+    text-align: center;
+}
+
+body {
+    background: #111;
+    color: #f8f8f8;
+}
+
+.mainbox {
+    position: absolute;
+    background: #f8f8f8;
+    left: 50%;
+    margin-left: -300px;
+    display: block;
+    
+    border: 3px dashed rgb(0, 0, 0);
+}
+
+.snake {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+    /* background-color: aqua; */
+}
+
+.btn1{
+    display: none;
+    width: 130px;
+    height: 50px;
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
-.box {
-    margin: 0 auto;
-    height: 500px;
-    width: 500px;
-    border: 3px solid black;
-}
-.box-invisible {
-    position: absolute;
-    left: 50%;
-    margin-left: -250px;
-    height: 500px;
-    width: 500px;
+.forrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.head {
-    width: 50px;
+.score{
     font-size: 50px;
-    text-align: center;
+    width: 270px;
 }
 
-.point {
-    width: 50px;
-    font-size: 50px;
-    text-align: center;
-}
-.box-invisible2 {
-    position: absolute;
-    left: 50%;
-    margin-left: -250px;
-    height: 500px;
-    width: 500px;
+.equalaizer{
+    font-size: 30px;
+    width: 250px;
+    margin-left: 15px;
 }
 
-.tail{
-    width: 50px;
-    font-size: 50px;
-    text-align: center;
-}
-
-.lose {
+.win {
     display: none;
     position: absolute;
     z-index: 100;
-    width: 250px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     left: 50%;
-    margin-left: -125px;
-    margin-top: 57.5px;
+    margin-left: -200px; 
+    margin-top: 150px;
     border: 5px solid rgb(100, 100, 100, 0.6);
     background: rgba(80,80,80,0.6);
 }
 
-.lose-text{
+.win-text{
     font-size: 60px;
     display: block;
     text-align: center;
-    margin: 70px 0;
+    margin-top: 15px;
 }
 
-button{
-    font-size: 40px;
-    width: 200px;
+.btn2{
+    width: 130px;
     height: 50px;
-    margin-left: 35%;
+    font-size: 30px;
 }
 
-.score{
-    position: absolute;
-    font-size: 60px;
-    left: 50px;
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn{
+    margin: 0 10px;
+}
+
+.timer{
+    font-size: 20px;
+    height: 30px;
+    width: 140px;
+}
+
+.btn3{
+    text-align: center;
+    font-size: 20px;
+    height: 35px;
+    width: 65px;
 }
