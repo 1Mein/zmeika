@@ -1,20 +1,5 @@
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: "127.0.0.1",
-    user: "jasom",
-    password: "2156513",
-});
 
-connection.connect((error) => {
-    if (error) {
-        console.log('Error connecting to the MySQL Database');
-        return;
-    }
-    console.log('Connection established sucessfully');
-});
-connection.end((error) => {
-});
-
+/////////////////////////////////////
 let box = document.querySelector(".mainbox");
 let forbox = box.getContext("2d");
 let snakecontext = document.querySelector(".snake").getContext("2d");
@@ -24,6 +9,7 @@ let directionchanged = false;
 let pointeated = false, bodyadded = false;
 let score = 0;
 let timer = 500;
+document.querySelector(".btn2").setAttribute('disabled', 'true');
 document.querySelector(".interval").innerHTML = timer;
 var snake = [
     {
@@ -240,6 +226,7 @@ function draw() {
     if (forcont) {
         document.querySelector(".win-text").innerHTML = "Lose<br>Your Score is<br>" + score;
         document.querySelector(".win").style.display = "block";
+        document.querySelector(".btn2").removeAttribute('disabled');
         clearInterval(interval);
     }
 
@@ -306,6 +293,7 @@ function draw() {
         if (+document.querySelector(".record").innerHTML < score) {
             document.querySelector(".record").innerHTML = score;
         }
+        document.querySelector(".btn2").removeAttribute('disabled');
         clearInterval(interval);
     }
     drawhead(whichhead);
@@ -313,7 +301,9 @@ function draw() {
 }
 
 document.querySelector(".btn1").onclick = () => {
+    document.querySelector(".btn1").setAttribute('disabled', 'true');
     start();
+
 }
 
 function start() {
@@ -322,10 +312,11 @@ function start() {
 }
 
 document.querySelector(".btn2").onclick = () => {
+    document.querySelector(".btn2").setAttribute('disabled', 'true');
     box = document.querySelector(".mainbox");
     forbox = box.getContext("2d");
     snakecontext = document.querySelector(".snake").getContext("2d");
-    reversedcurrentdirection = "left"
+    reversedcurrentdirection = "left";
     forcont = false;
     directionchanged = false;
     pointeated = false, bodyadded = false;
