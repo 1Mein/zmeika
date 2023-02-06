@@ -1,7 +1,7 @@
 
 /////////////////////////////////////
-let box = document.querySelector(".mainbox");
-let forbox = box.getContext("2d");
+// let box = document.querySelector(".mainbox");
+// let forbox = box.getContext("2d");
 let snakecontext = document.querySelector(".snake").getContext("2d");
 let reversedcurrentdirection = "left"
 let forcont = false;
@@ -308,13 +308,14 @@ document.querySelector(".btn1").onclick = () => {
 
 function start() {
     printpoint();
+    draw();
     interval = setInterval(draw, timer);
 }
 
 document.querySelector(".btn2").onclick = () => {
     document.querySelector(".btn2").setAttribute('disabled', 'true');
-    box = document.querySelector(".mainbox");
-    forbox = box.getContext("2d");
+    // box = document.querySelector(".mainbox");
+    // forbox = box.getContext("2d");
     snakecontext = document.querySelector(".snake").getContext("2d");
     reversedcurrentdirection = "left";
     forcont = false;
@@ -343,5 +344,5 @@ document.querySelector(".btn3").onclick = () => {
     let setter = +document.querySelector(".timer").value;
     timer = setter;
     document.querySelector(".interval").innerHTML = timer;
-    document.querySelector(".timer").value = "";
+    document.querySelector(".timer").value = 500;
 }

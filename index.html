@@ -14,19 +14,38 @@
     <div class="win">
         <div class="win-text">Lose</div>
     </div>
+
     <div class="forrow">
-        <div class="score">0</div>
-        <canvas class="mainbox" width="600" height="600"></canvas>
-        <canvas class="snake" width="600" height="600"></canvas>
-        <div class="equalaizer">Press "Start" to<br>start the game<br><br>"Restart" to play<br>again<br><br>W,A,S,D<br>control
-        <br><br>Record: &nbsp; <adsa class="record">0</adsa>
-        <br><br>
-        Input here interval
-        <input type="text" class="timer">
-        <button class="btn3">Apply</button>
-        Write number pls <br><br>
-        Current interval is: &nbsp; <adsa class="interval"></adsa>
-    </div>
+        <div>
+            <div class="score">0</div>
+
+            <div class="leaderboard">
+                <div class="title1">Top-5</div>
+                <hr>
+                <div class="leaders"></div>
+            </div>
+
+            <div class="auth">
+                <button class="aubtns btn4">Log in</button>
+                <button class="aubtns btn5">Sign in</button>
+            </div>
+
+        </div>
+
+        <!-- <canvas class="mainbox" width="600" height="600"></canvas> -->
+        <div><canvas class="snake" width="600" height="600"></canvas></div>
+
+
+        <div class="equalaizer">Press "Start" to<br>start the game<br><br>"Restart" to
+            play<br>again<br><br>W,A,S,D<br>control
+            <br><br>Record: &nbsp; <adsa class="record">0</adsa>
+            <br><br>
+            Input here interval
+            <input type="text" class="timer" value="500">
+            <button class="btn3">Apply</button>
+            Write number pls <br><br>
+            Current interval is: &nbsp; <adsa class="interval"></adsa>
+        </div>
     </div>
     <div class="btns">
         <div class="btn">

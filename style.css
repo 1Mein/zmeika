@@ -7,7 +7,7 @@ body {
     color: #f8f8f8;
 }
 
-.mainbox {
+/* .mainbox {
     position: absolute;
     background: #f8f8f8;
     left: 50%;
@@ -15,11 +15,15 @@ body {
     display: block;
     
     border: 3px dashed rgb(0, 0, 0);
-}
+} */
 
 .snake {
-    position: relative;
+    /* margin-left: -300px; */
     display: block;
+    background: #f8f8f8;
+    border: 3px dashed #111;
+    /* position: relative; */
+    /* display: block; */
     margin-bottom: 1rem;
     /* background-color: aqua; */
 }
@@ -29,6 +33,19 @@ body {
     width: 130px;
     height: 50px;
     font-size: 30px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+}
+
+.btn1:disabled{
+    color: rgb(82, 82, 82);
+    border: 3px solid rgb(82, 82, 82);
+}
+
+.btn1:hover{
+    background-color: #222;
+    cursor: pointer;
 }
 
 .forrow{
@@ -39,7 +56,8 @@ body {
 
 .score{
     font-size: 50px;
-    width: 270px;
+    width: 250px;
+    text-align: center;
 }
 
 .equalaizer{
@@ -72,12 +90,26 @@ body {
     width: 130px;
     height: 50px;
     font-size: 30px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+}
+
+.btn2:disabled{
+    color: rgb(82, 82, 82);
+    border: 3px solid rgb(82, 82, 82);
+}
+
+.btn2:hover{
+    background-color: #222;
+    cursor: pointer;
 }
 
 .btns{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .btn{
@@ -95,4 +127,50 @@ body {
     font-size: 20px;
     height: 35px;
     width: 65px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+}
+
+.btn3:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.leaderboard{
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 300px;
+    border: #f8f8f8 solid 3px;
+    width: 200px;
+}
+
+.title1{
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aubtns{
+    margin: 0 auto 0;
+    display: block;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+}
+
+.aubtns:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.auth{
+    margin-top: 30px;
+}
+
+.btn5{
+    margin-top: 10px;
 }
