@@ -227,6 +227,7 @@ function draw() {
         document.querySelector(".win-text").innerHTML = "Lose<br>Your Score is<br>" + score;
         document.querySelector(".win").style.display = "block";
         document.querySelector(".btn2").removeAttribute('disabled');
+        sendData();
         clearInterval(interval);
     }
 
@@ -294,6 +295,7 @@ function draw() {
             document.querySelector(".record").innerHTML = score;
         }
         document.querySelector(".btn2").removeAttribute('disabled');
+        sendData();
         clearInterval(interval);
     }
     drawhead(whichhead);
@@ -345,4 +347,17 @@ document.querySelector(".btn3").onclick = () => {
     timer = setter;
     document.querySelector(".interval").innerHTML = timer;
     document.querySelector(".timer").value = 500;
+}
+
+function sendData() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "index.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText);
+        }
+    };
+    
+    xhr.send("function=myFunction&data="+score);
 }

@@ -43,11 +43,6 @@ body {
     border: 3px solid rgb(82, 82, 82);
 }
 
-.btn1:hover{
-    background-color: #222;
-    cursor: pointer;
-}
-
 .forrow{
     display: flex;
     flex-direction: row;
@@ -100,11 +95,6 @@ body {
     border: 3px solid rgb(82, 82, 82);
 }
 
-.btn2:hover{
-    background-color: #222;
-    cursor: pointer;
-}
-
 .btns{
     display: flex;
     flex-direction: row;
@@ -120,6 +110,9 @@ body {
     font-size: 20px;
     height: 30px;
     width: 140px;
+    color: white;
+    background-color: #111;
+    border: 3px solid white; 
 }
 
 .btn3{
@@ -130,11 +123,6 @@ body {
     background-color: #111;
     border: 3px solid white;
     color: white;
-}
-
-.btn3:hover{
-    background-color: #222;
-    cursor: pointer;
 }
 
 .leaderboard{
@@ -162,15 +150,151 @@ body {
     color: white;
 }
 
-.aubtns:hover{
-    background-color: #222;
-    cursor: pointer;
-}
-
 .auth{
     margin-top: 30px;
 }
 
 .btn5{
     margin-top: 10px;
+}
+
+.login{
+    display: none;
+    margin-top: 10px;
+}
+
+.log{
+    font-size: 20px;
+    height: 30px;
+    width: 140px;
+    color: white;
+    background-color: #111;
+    border: 3px solid white; 
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.text3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.btns2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn6{
+    display: block;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn6:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.btn7{
+    display: block;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+    margin-left: 5px;
+}
+
+button:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.signin{
+    display: none;
+    margin-top: 10px;
+}
+
+.sign{
+    font-size: 20px;
+    height: 30px;
+    width: 140px;
+    color: white;
+    background-color: #111;
+    border: 3px solid white; 
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.btn8{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+    margin-left: 5px;
+}
+
+.btn8:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.btn9{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+    margin-left: 5px;
+}
+
+.btns3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.activeuser{
+    margin: 20px auto 0;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+
+.btn10{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #111;
+    border: 3px solid white;
+    color: white;
+    /* margin-left: 5px; */
+    margin: 5px auto 0;
+    display: block;
+}
+
+.btn10:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.error{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.leaders{
+    font-size: 25px;
 }
